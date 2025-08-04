@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Трясак](https://up.htmlacademy.ru/htmlcss-individual/2/user/2658695).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Сайт: [Мой проект Седона](https://dmitryanatolich.github.io/2658695-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
