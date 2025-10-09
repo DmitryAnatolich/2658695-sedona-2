@@ -26,7 +26,6 @@ html {
 }
 
 body {
-  display: flex;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -73,7 +72,7 @@ body {
 
 .button {
   display: inline-block;
-  font-family: initial;
+  font-family: inherit;
   line-height: 36px;
   font-size: 20px;
   color: inherit;
@@ -123,6 +122,10 @@ body {
   line-height: 20px;
 }
 
+/*Иконки*/
+
+
+
 /*Header*/
 
 .header {
@@ -137,13 +140,13 @@ body {
 }
 
 .navigation {
-  /*Почему высота хэдера 104пх?*/
   display: flex;
   margin: 0 auto;
 }
 
 .navigation-list,
 .navigation-user {
+  position: relative;
   flex-wrap: wrap;
   display: flex;
   list-style-type: none;
@@ -151,10 +154,6 @@ body {
   padding: 0;
   min-width: 20px;
   min-height: 20px;
-}
-
-.navigation-list {
-  padding: 20px 16px;
 }
 
 .navigation-user {
@@ -182,6 +181,10 @@ body {
 .navigation-user-link {
   color: inherit;
   text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navigation-link-go {
@@ -212,8 +215,7 @@ body {
 }
 
 .title-block {
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding: 69px 290px;
   background-color: #FFFFFF;
   text-align: center;
   color: #000000;
@@ -224,11 +226,13 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .title-block-secondary {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 0;
 }
 
 
@@ -236,7 +240,7 @@ body {
 
 
 .advantages-list {
-  /*Что-то не так с длинными*/
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -249,38 +253,39 @@ body {
 .advantages-item-long {
   display: flex;
   width: 100%;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 0.2);
+  align-items: center;
 }
-
 
 .advantages-card {
   width: 400px;
   min-height: 385px;
-  padding: 112px 85px;
+  padding: 102px 85px;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-middle {
-  background-color: #83B3D333;
+.advantages-card-light {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-light {
-  background-color: #83B3D31F;
+.advantages-card-dark {
+  background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
-.advantages-card-attractions {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.advantages-card-long {
+.advantages-card-title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.advantages-description::before{
+content: "";
+position: absolute;
+width: 60px;
+height: 2px;
+background-color: rgba(0, 0, 0, 0.3);
 }
 
 .convenience-list {
@@ -350,10 +355,10 @@ body {
 
 
 .newsletter {
-  /*Что то не так с переносом текста и фоном*/
   padding: 96px 258px 104px;
   background-color: #82B3D3;
   background-image: url(/images/bg-footer.jpg);
+  background-size: cover;
   color: #FFFFFF;
   text-align: center;
 }
@@ -398,19 +403,28 @@ body {
 /*Catalog*/
 
 
+
+.page-section {
+  background-color: #82B3D3;
+  background-image: url(/images/bg-catalog.jpg);
+  color: #FFFFFF;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   justify-content: space-evenly;
-  margin: 0 70px;
   padding: 0;
   list-style: none;
 }
 
 .pagination {
   display: flex;
-  padding: 40px 70px 60px;
 }
 
 .pagination-item-current {
@@ -434,12 +448,6 @@ body {
   margin-right: 8px;
   text-decoration: none;
   /*Не работает декорация текста*/
-}
-
-.page-section {
-  background-color: #82B3D3;
-  background-image: url(/images/bg-catalog.jpg);
-  color: #FFFFFF;
 }
 
 .catalog-filter-group {
@@ -502,7 +510,6 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: repeat(5/min-content);
   gap: 16px 20px;
 }
 
@@ -517,8 +524,7 @@ body {
   text-decoration: none;
 }
 
-.product-card-name {
-}
+.product-card-name {}
 
 .product-card-price {}
 
