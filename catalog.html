@@ -64,132 +64,126 @@
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span></a>
-              </li>
-              <li class="breadcrumbs-item">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                   fill="none" viewBox="0 0 13 13">
                   <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3zm5 11h-10V6.7l5-4.8 5 4.8z" />
                   <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4z" />
                 </svg>
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="8" height="11"
-                  fill="none" viewBox="0 0 8 11">
-                  <path fill="#fff"
-                    d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0s-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.6.6 0 0 0 0-1" />
-                </svg>
+              </li>
+              <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="categories">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>Бассейн
-                        <span class="control-mark"></span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>Парковка
-                        <span class="control-mark"></span>
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">Wi-Fi
-                        <span class="control-mark"></span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип Жилья:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <span class="control-radio"></span>
-                        <input class="visually-hidden control-input" type="radio" name="product-group" value="The hotel"
-                          checked>Гостиница
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <span class="control-radio"></span>
-                        <input class="visually-hidden control-input" type="radio" name="product-group"
-                          value="The motel">Мотель
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <span class="control-radio"></span>
-                        <input class="visually-hidden control-input" type="radio" name="product-group"
-                          value="Apartments">Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="Бассейн" checked>Бассейн
+                      <span class="control-mark"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="Парковка" checked>Парковка
+                      <span class="control-mark"></span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                      <span class="control-mark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <span class="control-radio"></span>
+                      <input class="visually-hidden control-input" type="radio" name="product-group" value="The hotel"
+                        checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <span class="control-radio"></span>
+                      <input class="visually-hidden control-input" type="radio" name="product-group"
+                        value="The motel">Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <span class="control-radio"></span>
+                      <input class="visually-hidden control-input" type="radio" name="product-group"
+                        value="Apartments">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range">
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="0" name="min-price" style="width: 143px"
-                        placeholder="от">
-                    </label>
-                    <label class="catalog-filter-label">
-                      <input class="range-input" type="number" value="9000" name="max-price" style="width: 143px"
-                        placeholder="до">
-                    </label>
-                    <div class="range-scale">
-                      <div class="range-bar" style="left: 0; width: 226px">
-                        <button class="range-toggle toggle-min">
-                          <span class="visually-hidden">Изменить минимальную цену</span>
-                        </button>
-                        <button class="range-toggle toggle-max">
-                          <span class="visually-hidden">Изменить максимальную цену</span>
-                        </button>
-                      </div>
+                  <label class="range-group">
+                    <input class="range-input range-input-left" type="number" value="0" name="min-price"
+                      style="width: 143px">
+                    <span class="range-label">от</span>
+                  </label>
+                  <label class="range-group">
+                    <input class="range-input range-input-right" type="number" value="9000" name="max-price"
+                      style="width: 143px">
+                    <span class="range-label-long">до</span>
+                  </label>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <button class="button button-secondary " type="submit">Применить</button>
-                <button class="button button-sn button-invisible button-transparency" type="submit">Сбросить</button>
+                <fieldset class="catalog-filter-button">
+                  <button class="button button-secondary button-sn button" type="submit">Применить</button>
+                  <button class="button button-sn button-transparency" type="submit">Сбросить</button>
+                </fieldset>
               </fieldset>
             </form>
           </div>
         </section>
         <section class="catalog  container">
           <div class="catalog-activities">
-            <h2 class="catalog-primary">Найдено гостиниц: 38</h2>
+            <h2 class="catalog-title">Найдено гостиниц: 38</h2>
             <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
             </select>
             <div class="catalog-activities-buttons">
-              <a href="#" class="sorting">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
-                  <g fill="#000" clip-path="url(#clip0_175954_295)">
-                    <path
-                      d="M2 0H0v2h2zm14 0H4v2h12zM2 4H0v2h2zm14 0H4v2h12zM2 8H0v2h2zm14 0H4v2h12zM2 12H0v2h2zm14 0H4v2h12z" />
+              <a href="catalog.html?view=tile" class="sorting">
+                <svg class="sorting-element" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="14" fill="none" viewBox="0 0 16 14">
+                  <g fill="#000" clip-path="url(#clip0_175954_168)">
+                    <path d="M4 0H0v6h4zm12 0h-4v6h4zm-6 0H6v6h4zM4 8H0v6h4zm12 0h-4v6h4zm-6 0H6v6h4z" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_175954_295">
+                    <clipPath id="clip0_175954_168">
                       <path fill="#fff" d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
                 </svg>
-                <span class="visually-hidden">Показать список</span>
+                <span class="visually-hidden">Показать иконки</span>
               </a>
-              <a href="#" class="sorting">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
+              <a href="catalog.html?view=card" class="sorting">
+                <svg class="sorting-element" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="14" fill="none" viewBox="0 0 16 14">
                   <g fill="#000" clip-path="url(#clip0_175954_278)">
                     <path d="M16 12H0v2h16zM14 2v6H2V2zm2-2H0v10h16z" />
                   </g>
@@ -201,19 +195,20 @@
                 </svg>
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a href="#" class="sorting">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                  fill="none" viewBox="0 0 16 14">
-                  <g fill="#000" clip-path="url(#clip0_175954_168)">
-                    <path d="M4 0H0v6h4zm12 0h-4v6h4zm-6 0H6v6h4zM4 8H0v6h4zm12 0h-4v6h4zm-6 0H6v6h4z" />
+              <a href="catalog.html?view=list" class="sorting">
+                <svg class="sorting-element" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="14" fill="none" viewBox="0 0 16 14">
+                  <g fill="#000" clip-path="url(#clip0_175954_295)">
+                    <path
+                      d="M2 0H0v2h2zm14 0H4v2h12zM2 4H0v2h2zm14 0H4v2h12zM2 8H0v2h2zm14 0H4v2h12zM2 12H0v2h2zm14 0H4v2h12z" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_175954_168">
+                    <clipPath id="clip0_175954_295">
                       <path fill="#fff" d="M0 0h16v14H0z" />
                     </clipPath>
                   </defs>
                 </svg>
-                <span class="visually-hidden">Показать иконки</span>
+                <span class="visually-hidden">Показать список</span>
               </a>
             </div>
           </div>
@@ -263,7 +258,6 @@
               <p class="button-small  button button-sn">Рейтинг 5,0</p>
             </li>
           </ul>
-          <hr class="container">
           <ul class="pagination">
             <li class="pagination-item button button-sn button-current">
               <a class="pagination-current">1</a>
@@ -289,10 +283,10 @@
           <h6 class="newsletter-primary">Подпишитесь на рассылку</h6>
           <p class="newsletter-post">Только полезная информация и никакого спама,честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
+            <span class="visually-hidden"><label for="newsletter-email">Email</label></span>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
-            <button class="button button-sn button-secondary" type="submit">Подписаться</button>
+            <button class="button button-sn button-secondary button-right" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -334,12 +328,13 @@
           <a:link href="tel:+78128121212">+7(812)812-12-12</a>
         </div>
         <div class="address-container">
-          <a class="logo" href="https://echo.htmlacademy.ru/" target="_blank">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115" height="34"
-              fill="none">
-              <path fill="#000"
-                d="M0 13.26v2.6h2.5v-2.6zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9m15 .3h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3m6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6m18.9-5.1c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6m17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6m13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3m0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6m19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4m11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1z" />
-            </svg>.html academy</a>
+          <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115" height="34"
+            fill="none">
+            <path fill="#000"
+              d="M0 13.26v2.6h2.5v-2.6zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9m15 .3h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3m6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6m18.9-5.1c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6m17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6m13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3m0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6m19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4m11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1z" />
+          </svg>
+          <span class="visually-hidden"><a class="logo" href="https://echo.htmlacademy.ru/" target="_blank">
+              .html academy</a></span>
         </div>
       </footer>
     </div>
